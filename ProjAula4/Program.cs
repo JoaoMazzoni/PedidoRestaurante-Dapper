@@ -3,20 +3,19 @@ using Models;
 
 Console.WriteLine("Inicio...");
 
-Pedido pedido = new Pedido()
+Pedido pedido = new Pedido
 {
-    Descricao = "Quero Tudo",
-    Mesa = 10
-
+    Id = 1,
+    Descricao = "Quero tudo10",
+    Mesa = 10,
+    Item = new Item { Descricao = "Item top!" }
 };
-
 
 if (new PedidoController().Inserir(pedido))
 {
-    Console.WriteLine("Inseriu Tudo!");
+    Console.WriteLine("Inseriu tudo!!!!");
 }
 else
 {
-    Console.WriteLine("Erro!");
+    Console.WriteLine("ERRO");
 }
-
