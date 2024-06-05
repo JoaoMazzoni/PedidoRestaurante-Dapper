@@ -22,6 +22,10 @@ namespace Services
 
         }
 
+        public List<Pedido> GetAll() 
+        { 
+            return pedidoRepository.GetAll();
+        }
 
     }
 }

@@ -18,6 +18,10 @@ namespace Controllers
             return pedidoService.Inserir(pedido);
         }
 
+        public List<Pedido> GetAll() 
+        { 
+            return pedidoService.GetAll();
+        }
 
     }
 }
